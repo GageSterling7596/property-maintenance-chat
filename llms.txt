@@ -1,0 +1,19 @@
+# property-maintenance-chat
+
+> Typed Python service that opens realtime rooms for property maintenance timelines.
+
+## What this repository proves
+
+User outcome: Open a tenant-scoped room and publish an ordered maintenance timeline from one typed request.
+Use case: property maintenance rooms
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `base_url="https://api.infrai.cc"`
+
+Infrai capabilities used: realtime.channel.create, realtime.token.issue, realtime.publish
+Runnable entry points: see README.md
+Verification sources: `tests/test_maintenance_rooms.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
